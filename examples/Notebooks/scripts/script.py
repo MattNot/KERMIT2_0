@@ -30,7 +30,7 @@ def writeTree(nome,tree):
 def createDTK(parenthetical_tree):
     
     tree = Tree(string=parenthetical_tree)
-    dtCalculator = DT(dimension=1024, LAMBDA= 0.4, operation=fast_shuffled_convolution)
+    dtCalculator = DT(dimension=4000, LAMBDA= 0.4, operation=fast_shuffled_convolution)
     distributedTree1 = dtCalculator.dt(tree=tree)
     return distributedTree1
 
